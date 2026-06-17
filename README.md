@@ -9,7 +9,7 @@ Most clients can use the hosted endpoint directly (`https://selectic.ai/api/mcp`
 Get an API key at https://selectic.ai/dashboard, then:
 
 ```bash
-SELECTIC_API_KEY=slc_your_key npx selectic-mcp
+SELECTIC_API_KEY=slc_your_key npx -y @selectic/mcp
 ```
 
 Claude Desktop (`claude_desktop_config.json`):
@@ -19,7 +19,7 @@ Claude Desktop (`claude_desktop_config.json`):
   "mcpServers": {
     "selectic": {
       "command": "npx",
-      "args": ["-y", "selectic-mcp"],
+      "args": ["-y", "@selectic/mcp"],
       "env": { "SELECTIC_API_KEY": "slc_your_key" }
     }
   }
