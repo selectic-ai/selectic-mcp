@@ -1,16 +1,22 @@
 # selectic-mcp
 
-MCP connector for [Selectic](https://selectic.ai) — give Claude or ChatGPT the ability to **call, text, and email businesses** for you (get a price, book a slot, ask a question) and read back the transcript, recording, and replies.
+MCP connector for [Selectic](https://selectic.ai) — give your AI assistant (Claude, ChatGPT, Perplexity, or any MCP-compatible app) the ability to **call, text, and email businesses** for you: get quotes, book appointments, ask questions — and read back the transcript, recording, and replies. New accounts start with **$2 free**. US businesses for now.
 
-Most clients can use the hosted endpoint directly (`https://selectic.ai/api/mcp`, `Authorization: Bearer <key>`). For stdio-only clients (e.g. Claude Desktop), this package bridges stdio ↔ the hosted endpoint.
+Most apps can add the hosted endpoint directly as a custom connector:
+
+```
+https://selectic.ai/api/mcp
+```
+
+You'll be prompted to **sign in (OAuth)** the first time — no API key to manage. For stdio-only clients (e.g. Claude Desktop), this package bridges stdio ↔ the hosted endpoint.
 
 ## Use
 
-Get an API key at https://selectic.ai/dashboard, then:
-
 ```bash
-SELECTIC_API_KEY=slc_your_key npx -y @selectic/mcp
+npx -y @selectic/mcp
 ```
+
+It opens a browser the first time so you can sign in to Selectic.
 
 Claude Desktop (`claude_desktop_config.json`):
 
@@ -19,12 +25,11 @@ Claude Desktop (`claude_desktop_config.json`):
   "mcpServers": {
     "selectic": {
       "command": "npx",
-      "args": ["-y", "@selectic/mcp"],
-      "env": { "SELECTIC_API_KEY": "slc_your_key" }
+      "args": ["-y", "@selectic/mcp"]
     }
   }
 }
 ```
 
 ## Tools
-`place_call`, `get_call`, `send_sms`, `send_email`, `get_replies`, `list_outreach`. See https://selectic.ai/docs.
+`place_call`, `get_call`, `send_sms`, `send_email`, `get_replies`, `list_outreach`, `list_call_types`. See https://selectic.ai/docs.

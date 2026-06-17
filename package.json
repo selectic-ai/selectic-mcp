@@ -1,8 +1,8 @@
 {
   "name": "@selectic/mcp",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "mcpName": "io.github.selectic-ai/mcp",
-  "description": "MCP connector for Selectic \u2014 let Claude/ChatGPT call, text & email businesses for you.",
+  "description": "MCP connector for Selectic \u2014 let Claude, ChatGPT, Perplexity or any AI assistant call, text & email businesses for you. OAuth sign-in, no API key.",
   "type": "module",
   "bin": {
     "selectic-mcp": "bin.mjs"
@@ -26,7 +26,8 @@
     "email",
     "outreach",
     "claude",
-    "chatgpt"
+    "chatgpt",
+    "perplexity"
   ],
   "repository": {
     "type": "git",

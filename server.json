@@ -4,7 +4,7 @@
   "title": "Selectic",
   "description": "AI agent that calls, texts & emails businesses for you, then returns transcripts and replies.",
   "status": "active",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://selectic.ai/docs",
   "repository": {
     "url": "https://github.com/selectic-ai/selectic-mcp",
@@ -16,7 +16,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@selectic/mcp",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
