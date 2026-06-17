@@ -1,6 +1,7 @@
 {
   "name": "@selectic/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.selectic-ai/mcp",
   "description": "MCP connector for Selectic \u2014 let Claude/ChatGPT call, text & email businesses for you.",
   "type": "module",
   "bin": {
