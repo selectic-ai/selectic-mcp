@@ -14,7 +14,7 @@
   "packages": [
     {
       "registryType": "npm",
-      "registryBaseUrl": "https://npmjs.com",
+      "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@selectic/mcp",
       "version": "0.1.2",
       "runtimeHint": "npx",
