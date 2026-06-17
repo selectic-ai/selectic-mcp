@@ -25,10 +25,8 @@
   ],
   "remotes": [
     {
-      "transport": {
-        "type": "streamable-http",
-        "url": "https://selectic.ai/api/mcp"
-      }
+      "type": "streamable-http",
+      "url": "https://selectic.ai/api/mcp"
     }
   ]
 }
