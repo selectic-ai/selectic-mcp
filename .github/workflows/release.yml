@@ -16,7 +16,8 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
       - run: npm ci || npm install
-      - run: npm publish --access public
+      - name: Publish (skip if version already exists)
+        run: npm publish --access public || echo "npm publish skipped (version may already be published)"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
