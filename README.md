@@ -13,7 +13,7 @@ You'll be prompted to **sign in (OAuth)** the first time — no API key to manag
 ## Use
 
 ```bash
-npx -y @selectic/mcp
+npx -y @selectic/mcp@latest
 ```
 
 It opens a browser the first time so you can sign in to Selectic.
@@ -25,7 +25,7 @@ Claude Desktop (`claude_desktop_config.json`):
   "mcpServers": {
     "selectic": {
       "command": "npx",
-      "args": ["-y", "@selectic/mcp"]
+      "args": ["-y", "@selectic/mcp@latest"]
     }
   }
 }
