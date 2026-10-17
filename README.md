@@ -66,9 +66,9 @@ For Claude Desktop, add `parallel-search` to the existing `mcpServers` object in
 }
 ```
 
-This uses Node.js and `npx`, like the Selectic setup above. Restart Claude Desktop
-after saving, then check that `parallel-search` offers `web_search` and `web_fetch`
-alongside Selectic's tools.
+Use Node.js 20.18.1 or newer with `npx` for this companion setup. Restart Claude
+Desktop after saving, then check that `parallel-search` offers `web_search` and
+`web_fetch` alongside Selectic's tools.
 
 For example, ask:
 
